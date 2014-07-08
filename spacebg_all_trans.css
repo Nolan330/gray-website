@@ -1,0 +1,537 @@
+﻿/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+/**** Base styles ****/
+
+html, body, div, span, object,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  margin: 100px;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial,   sans-serif;
+  font-size: 13px;
+  line-height: 2.7em;
+  background: #000 url(./pictures/space/background_test_tiny.jpg) 0 0 no-repeat;
+  color: #FFF;
+}
+
+h1, h2, h3, p, ul, ol, pre, dl {
+  text-align: center;
+  margin-bottom: 1.0em;
+}
+
+
+button, h1, h2, h4, #super-list, .element, .tagline, #index-list,
+.super-list .link {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h4 {
+  font-weight: bold;
+  display: inline-block;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  display: inline-block;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: hsla(100, 100%, 100%, .45);
+     -moz-text-fill-color: hsla(100, 100%, 100%, .45);
+          text-fill-color: hsla(100, 100%, 100%, .45);
+  -webkit-text-stroke: 2px white;
+     -moz-text-stroke: 2px white;
+          text-stroke: 2px white;
+}
+
+h1 {
+  width: 100%
+  font-size: 32px;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.1em;
+}
+
+h4 {
+  margin: 1.5em;
+}
+
+ul, ol {
+  margin-left: 1.5em;
+}
+
+a,
+a code {
+  color: hsla(100, 100%, 100%, .9);
+  text-decoration: none;
+}
+
+a:hover,
+a:hover code {
+  text-shadow:  0 0 .75em #FFFFFF;
+}
+
+a:active,
+a:active code {
+  color: #1FB;
+}
+
+a img { border: none; }
+
+a img:hover {
+  box-shadow: 0 0 .75em #FFF;
+}
+
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+blockquote {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  border-left: 1px solid #333;
+  font-style: italic;
+}
+
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  padding: 5px;
+  margin: 0% auto auto auto;
+  width: 722px;
+}
+
+.center {
+    width: 592px;
+}
+
+.decenter {
+    width: 722px;
+}
+
+.element {
+  width: 110px;
+  height: 110px;
+  margin: 4px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: hsla(100,100%,100%, 0);
+  color: #FFF;
+  border-style: solid;
+  border-color: #FFF;
+  border-width: 1px;
+  -webkit-border-top-right-radius: 1.2em;
+      -moz-border-radius-topright: 1.2em;
+          border-top-right-radius: 1.2em;
+}
+
+.work, .art, .likes, .contact, .other {}
+
+button {
+   background: hsla(100, 100%, 100%, 0);
+   border: solid 1px transparent;
+   color: #FFF;
+   font-size: 2em;
+   margin-left: 10px;
+}
+
+button:hover {
+    border: solid 1px #FFF;
+}
+
+button:selected {
+    border: solid 2px #FFF;
+}
+
+.element main {
+  font-size: 0em;
+}
+
+.element img {
+  display: block;
+  max-width: 0em;
+  max-height: 0em;
+}
+
+.element.large img {
+  max-width: 5em;
+  max-height: 8em;
+}
+
+.element.family img {
+
+}
+
+.element.large.family img {
+  top: .7em;
+  left: 3.3em;
+  max-width: 9.5em;
+  max-height: 9.5em;
+}
+
+.element * {
+  position: absolute;
+  margin: 0;
+}
+
+.element .bigName {
+  font-size: 0em;
+  line-height: 1.0em;
+}
+
+.element.large .bigName {
+  top: 0.1em;
+  left: 0.3em;
+  font-size: 5.0em;
+}
+
+.element .name {
+  left: .5em;
+  bottom: 1.6em;
+  font-size: 1.3em;
+  color: #000000;
+}
+
+.element .about {
+  left: .5em;
+  bottom: 3.0em;
+  font-size: 0em;
+  color: #000000;
+}
+
+.element.large .about {
+  font-size: 1.4em;
+  bottom: 1.4em;
+}
+
+.element .lowerText {
+  line-height: 1.2em;
+  font-size: 0.0em;
+  left: 0.5em;
+  bottom: 0.2em;
+}
+
+.element.large .lowerText {
+  font-size: 0.4em;
+}
+
+.element.props img {
+  max-height: 0.0em;
+  max-width: 0.0em;
+}
+
+.element.large.props img {
+  max-height: 8.0em;
+  max-width: 8.0em;
+  top: 1.3em;
+  left: 4.65em;
+}
+
+.element .subtext {
+  color: hsla(100, 100%, 100%, .095);
+  font-size: 0.7em;
+  left: 0.5em;
+  bottom: 0.2em;
+}
+
+.element .resume {
+  font-size: 0em;
+}
+
+.element.large .resume {
+  left: 6.1em;
+  bottom: 1.3em;
+  font-size: 1.1em;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+         -background-clip: text;
+  -webkit-text-fill-color: hsla(100, 100%, 100%, .45);
+     -moz-text-fill-color: hsla(100, 100%, 100%, .45);
+          text-fill-color: hsla(100, 100%, 100%, .45);
+  -webkit-text-stroke: 1px white;
+     -moz-text-stroke: 1px white;
+          text-stroke: 1px white;
+}
+
+.element .flow {
+  font-size: 0em;
+}
+
+.element.large .flow {
+  line-height: 1em;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+         -background-clip: text;
+  -webkit-text-fill-color: hsla(100, 100%, 100%, .45);
+     -moz-text-fill-color: hsla(100, 100%, 100%, .45);
+          text-fill-color: hsla(100, 100%, 100%, .45);
+  -webkit-text-stroke: 2px white;
+     -moz-text-stroke: 2px white;
+          text-stroke: 2px white;
+  font-weight: bold;
+  top: 2.07em;
+  left: 1.30em;
+  font-size: 1.2em;
+}
+
+.element .learn_more {
+  font-size: 0em;
+}
+
+.element.large .learn_more {
+  top: 13em;
+  left: 13em;
+  line-height: 1.0em;
+  font-size: .56em;
+  color: white;
+  white-space: nowrap;
+}
+
+.element.large .flowdesc {
+  top: 4em;
+  position: absolute;
+  margin: 3.6em;
+  line-height: 1.0em;
+  color: white;
+  font-size: .56em;
+}
+
+.element .flowdesc {
+  font-size: 0em;
+}
+
+.element.large .whitedescription {
+  color: hsla(100, 100%, 100%, 1);
+  top: 5.3em;
+  line-height: 1.0em;
+  position: absolute;
+  margin: 4.5em;
+  font-size: .56em;
+}
+
+.element .whitedescription {
+  font-size: 0em;
+}
+
+.element .jaime {
+  max-width:0px;
+  max-height:0px;
+}
+
+.element.large .jaime {
+  display: block;
+  max-width: 380px;
+}
+
+.element .whiteborder {
+  max-width: 0px;
+  max-height: 0px;
+}
+
+.element.large .whiteborder {
+  padding: 2px;
+  border: 1px solid white;
+}
+
+.element .course_material {
+  font-size: 0em;
+}
+
+.element.large .course_material {
+  top: 1.5em;
+  left: 1.7em;
+  line-height: 1em;
+  color: hsla(100, 100%, 100%, 1);
+  white-space: nowrap;
+  font-size: .56em;
+  font-weight: bold;
+}
+
+.element.large .description {
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: hsla(100, 100%, 100%, .9);
+         -moz-text-fill-color: hsla(100, 100%, 100%, .9);
+              text-fill-color: hsla(100, 100%, 100%, .9);
+  top: 5.95em;
+  line-height: 1.1em;
+  position: absolute;
+  margin: 2.3em;
+  font-size: .63em;
+  font-weight: bold;
+}
+
+.element .description {
+  font-size: 0em;
+}
+
+.element .contact {
+  line-height: .6em;
+  font-size: 0em;
+}
+
+.element.large .contact {
+  color: hsla(0, 0%, 100%, .75);
+  top: 3.8em;
+  left: 4.5em;
+  font-size: .75em;
+  line-height: .75em;
+}
+
+.element .header {
+  left: .25em;
+  top: .15em;
+  font-weight: bold;
+  font-size: 0em;
+  color: #FFF;
+}
+
+.element.large .header {
+  left: .5em;
+  top: .5em;
+  font-size: 1.25em;
+}
+
+
+.element .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  /*color: hsla(0,0%,80%,.65);*/
+  color: #FFF;
+  /*background: url(./pictures/space/spacebackground.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  right: 0.5em;
+  top: 0em;
+}
+
+.element.large .number {
+  right: .5em;
+  top: .5em;
+}
+
+.variable-sizes .element.width2 { width: 230px; }
+
+.variable-sizes .element.height2 { height: 230px; }
+
+.variable-sizes .element.width2.height2 {
+  font-size: 2.0em;
+}
+
+.element.large,
+.variable-sizes .element.large,
+.variable-sizes .element.large.width2.height2 {
+  top: .2em;
+  left: .2em;
+  font-size: 2.63em;
+  width: 590px;
+  height: 350px;
+  z-index: 100;
+}
+
+
+.clickable .element:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3 {
+  text-shadow:
+    0 0 10px white,
+    0 0 10px white
+  ;
+}
+
+.clickable .element:hover h2 {
+  color: white;
+}

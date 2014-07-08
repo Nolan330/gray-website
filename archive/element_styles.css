@@ -1,0 +1,468 @@
+﻿/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+/**** Base styles ****/
+
+html, body, div, span, object,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial,   sans-serif;
+  font-size: 13px;
+  line-height: 2.7em;
+  background: #FFFFFF;
+  color: #FFF;
+}
+
+h1, h2, h3, p, ul, ol, pre, dl {
+  text-align: center;
+  margin-bottom: 1.0em;
+}
+
+
+h1, h2, h4, #super-list, .element, .tagline, #index-list,
+.super-list .link {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h4 {
+  font-weight: bold;
+  font-variant: small-caps;
+  display: inline-block;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  display: inline-block;
+  /***text-shadow:  #86303c .01em .01em #ffffff,
+	        #863037 .02em .02em #ffffff,
+		#86303c .03em .03em #3202fe,
+	        #863037 .04em .04em #001214,
+		#863032 .05em .05em #EF8e64,
+		#86302c .06em .06em #EF02f1,
+		#863027 .07em .07em #2320de,
+		#863022 .08em .08em #35ffa2,
+		#86301c .09em .09em #EF4414,			
+		#863017 .10em .10em #1421b6,
+		#863012 .11em .11em #09fe39,
+		#86300f .12em .12em  #e214a1;***/ 
+  text-shadow:  .05em 0 #000,
+		0 .05em #000,
+		-.05em 0 #000,
+		0 -.05em #000;
+}
+
+h1 {
+  width: 100%
+  font-size: 32px;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.1em;
+}
+
+h4 {
+  margin: 1.5em;
+}
+
+ul, ol {
+  margin-left: 1.5em;
+}
+
+a,
+a code {
+  color: #FFF;
+  text-decoration: underline;
+ /*** text-shadow:  .05em 0 #000,
+		0 .05em #000; ***/
+  text-shadow:  .05em 0 #000,
+		0 .05em #000,
+		-.05em 0 #000,
+		0 -.05em #000;
+}
+
+a:hover,
+a:hover code {
+  text-shadow:  0 0 .75em #FFFFFF;
+}
+
+a:active,
+a:active code {
+  color: #1FB;
+}
+
+a img { border: none; }
+
+a img:hover {
+  box-shadow: 0 0 .75em #FFF;
+}
+
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+blockquote {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  border-left: 1px solid #333;
+  font-style: italic;
+}
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  border: 1px solid #FFF;
+  padding: 5px;
+  margin: 0 auto;
+  width: 800px;
+}
+
+
+.element {
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #888;
+  color: #222;
+  -webkit-border-top-right-radius: 1.2em;
+      -moz-border-radius-topright: 1.2em;
+          border-top-right-radius: 1.2em;
+}
+
+.element.red             { background: #F00; background: hsl(   0, 100%, 50%); }
+.element.orange	 	 { background: #F80; background: hsl(  36, 100%, 50%); }
+.element.yellow	         { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element.lightblue       { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element.purple          { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element.pink            { background: #F08; background: hsl( 324, 100%, 50%); }
+.element.green		 { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element.blue		 { background: #00F; background: hsl( 252, 100%, 50%); }
+.element.gray		 { background: hsla(0,0%,0%, .2);		 			}
+.element.darkgray	 { background: hsla(0,0%,0%, .5); }
+.element.darkestgray	 { background: hsla(0,0%,0%, .8); }
+.element.white		 { background: hsla(0,0%,0%, .0); }
+
+.element main {
+  font-size: 0em;
+}
+
+.element img {
+  display: block;
+  max-width: 0em;
+  max-height: 0em;
+}
+
+.element.large img {
+  max-width: 5em;
+  max-height: 8em;
+}
+
+.element.family img {
+
+}
+
+.element.large.family img {
+  top: .7em;
+  left: 3.3em;
+  max-width: 9.5em;
+  max-height: 9.5em;
+}
+
+.element * {
+  position: absolute;
+  margin: 0;
+}
+
+.element .bigName {
+  font-size: 0em;
+  line-height: 1.0em;
+  color: #FFF;
+}
+
+.element.large .bigName {
+  top: 0.1em;
+  left: 0.3em;
+  font-size: 5.0em;
+}
+
+/*.element.fake .symbol {
+  color: #000;
+}*/
+
+.element .name {
+  left: .5em;
+  bottom: 1.6em;
+  font-size: 1.3em;
+  color: #000000;
+}
+
+.element .about {
+  left: .5em;
+  bottom: 3.0em;
+  font-size: 0em;
+  color: #000000;
+}
+
+.element.large .about {
+  font-size: 1.4em;
+  bottom: 1.4em;
+}
+
+.element .lowerText {
+  line-height: 1.2em;
+  font-size: 0.0em;
+  left: 0.5em;
+  bottom: 0.2em;
+}
+
+.element.large .lowerText {
+  font-size: 0.4em;
+}
+
+.element.props img {
+  max-height: 0.0em;
+  max-width: 0.0em;
+}
+
+.element.large.props img {
+  max-height: 8.0em;
+  max-width: 8.0em;
+  top: 1.3em;
+  left: 4.65em;
+}
+
+.element .subtext {
+  color: hsla(0,0%,0%, .02);
+  font-size: 0.7em;
+  left: 0.5em;
+  bottom: 0.2em;
+}
+
+.element .resume {
+  left: .5em;
+  bottom: 1.7em;
+  font-size: 0em;
+  color: #000000;
+}
+
+.element.large .resume {
+  left: 5em;
+  bottom: 1.2em;
+  font-size: 1.3em;
+}
+
+.element .flow {
+  font-size: 0em;
+}
+
+.element.large .flow {
+  top:.35em;
+  line-height: 1em;
+  color: hsla(0,0%, 100%, .75);
+  left:.5em;
+  font-size:.8em;
+}
+
+.element.large .flowdesc {
+  top: 2.3em;
+  line-height: 1.0em;
+  color: hsla(0,0%, 100%, .75);
+  left:.7em;
+  right: 3.0em;
+  font-size:.52em;
+}
+
+.element .flowdesc {
+  font-size: 0em;
+}
+
+.element.large .whitedescription {
+  color: hsla(0,0%, 100%, .75);
+  top: 5.3em;
+  line-height: 1.0em;
+  position: absolute;
+  margin: 4.5em;
+  font-size: .56em;
+}
+
+.element .whitedescription {
+  font-size: 0em;
+}
+
+.element.large .description {
+  color: hsla(0,0%,0%, .75);
+  top: 5.3em;
+  line-height: 1.0em;
+  position: absolute;
+  margin: 4.5em;
+  font-size: .56em;
+}
+
+.element .description {
+  font-size: 0em;
+}
+
+.element .contact {
+  line-height: .6em;
+  font-size: 0em;
+}
+
+.element.large .contact {
+  color: hsla(0, 0%, 100%, .75);
+  top: 3.8em;
+  left: 4.5em;
+  font-size: .75em;
+  line-height: .75em;
+}
+
+.element .header {
+  left: .25em;
+  top: .15em;
+  font-weight: bold;
+  font-size: 0em;
+  color: #FFF;
+}
+
+.element.large .header {
+  left: .5em;
+  top: .5em;
+  font-size: 1.25em;
+}
+
+
+.element .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: hsla(0,0%,80%,.65);
+  right: 0.5em;
+  top: 0em;
+}
+
+.element.large .number {
+  right: .5em;
+  top: .5em;
+}
+
+.variable-sizes .element.width2 { width: 230px; }
+
+.variable-sizes .element.height2 { height: 230px; }
+
+.variable-sizes .element.width2.height2 {
+  font-size: 2.0em;
+}
+
+.element.large,
+.variable-sizes .element.large,
+.variable-sizes .element.large.width2.height2 {
+  top: .2em;
+  left: .2em;
+  font-size: 2.63em;
+  width: 590px;
+  height: 350px;
+  z-index: 100;
+}
+
+
+.clickable .element:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3 {
+  text-shadow:
+    0 0 10px white,
+    0 0 10px white
+  ;
+}
+
+.clickable .element:hover h2 {
+  color: white;
+}
