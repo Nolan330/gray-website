@@ -89,7 +89,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial,   sans-serif;
   font-size: 13px;
   line-height: 2.7em;
-  background: #000 url(./pictures/space/background_test_tiny.jpg) 0 0 no-repeat;
+  background: #000 url(../pictures/space/background_test_tiny.jpg) 0 0 no-repeat;
   color: #FFF;
 }
 
@@ -270,7 +270,7 @@ button:selected {
 }
 
 .element.large .bigName {
-  top: 0.1em;
+  top: 0em;
   left: 0.3em;
   font-size: 5.0em;
 }
@@ -447,7 +447,7 @@ button:selected {
   top: 5.95em;
   line-height: 1.1em;
   position: absolute;
-  margin: 2.3em;
+  margin: 2.2em;
   font-size: .63em;
   font-weight: bold;
 }
