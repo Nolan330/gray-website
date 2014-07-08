@@ -114,12 +114,18 @@ h1, h2, h3 {
   display: inline-block;
   -webkit-background-clip: text;
      -moz-background-clip: text;
+      -ms-background-clip: text;
+       -o-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: hsla(100, 100%, 100%, .45);
      -moz-text-fill-color: hsla(100, 100%, 100%, .45);
+      -ms-text-fill-color: hsla(100, 100%, 100%, .45);
+       -o-text-fill-color: hsla(100, 100%, 100%, .45);
           text-fill-color: hsla(100, 100%, 100%, .45);
   -webkit-text-stroke: 2px white;
      -moz-text-stroke: 2px white;
+      -ms-text-stroke: 2px white;
+       -o-text-stroke: 2px white;
           text-stroke: 2px white;
 }
 
@@ -212,6 +218,8 @@ body {
   border-width: 1px;
   -webkit-border-top-right-radius: 1.2em;
       -moz-border-radius-topright: 1.2em;
+       -ms-border-top-right-radius: 1.2em;
+        -o-border-top-right-radius: 1.2em;
           border-top-right-radius: 1.2em;
 }
 
@@ -318,7 +326,7 @@ button:selected {
 }
 
 .element .subtext {
-  color: hsla(100, 100%, 100%, .095);
+  color: hsla(100, 100%, 100%, .05);
   font-size: 0.7em;
   left: 0.5em;
   bottom: 0.2em;
