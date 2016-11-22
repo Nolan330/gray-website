@@ -193,7 +193,6 @@ body {
 #container {
   padding: 5px;
   margin: 0% auto auto auto;
-  width: 722px;
 }
 
 .center {
@@ -469,13 +468,12 @@ button:selected {
 .element .number {
   font-size: 1.25em;
   font-weight: bold;
-  /*color: hsla(0,0%,80%,.65);*/
   color: #FFF;
-  /*background: url(./pictures/space/spacebackground.jpg);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
   right: 0.5em;
   top: 0em;
+  pointer-events: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .element.large .number {
