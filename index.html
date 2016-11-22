@@ -11,110 +11,57 @@
          Shadowbox.init();
     </script>
     <script src="./js/jquery-1.7.1.min.js"></script>
-    <script src="./js/jquery.isotope.min.js"></script>
-    <script src="./js/jquery.isotope.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <!--<script src="./js/jquery.isotope.js"></script>-->
 </head>
 <body>
-<div id="filters" style="margin: 0% auto auto auto;width:451px;border-bottom: 1px solid #FFF;">
-    <button data-filter=".work">Work</button>
-    <button data-filter=".art">Art</button>
-    <button data-filter=".likes">About</button>
-    <button data-filter=".contact">Contact</button>
-    <button data-filter="*">All</button>
+<div id="filters" style="margin: 0% auto auto auto;width:571px;border-bottom: 1px solid #FFF;">
+    <button data-filter=".nolan">nolan</button>
+    <button data-filter=".people">people</button>
+    <button data-filter=".stuff">things</button>
+    <button data-filter=".about">about</button>
+    <button data-filter=".contact">contact</button>
+    <button data-filter="*">all</button>
 </div>
 
 <div id="container">
-    <div class="element large main work">
+    <div class="element main nolan">
         <p class="number">1</p>
-        <h3 class="bigName">Nolan</h3>
-        <p class="description">I'm Nolan. I study Computer Science at Vanderbilt University. I'm originally from Indiana and have an unbelievable family. Pretty much everything else about me can be found by clicking around furiously on this page.</p>
-        <h4 class="resume"><a href="./SmithResume.pdf" target="_blank">resum&#233;</a></h4>
-        <p class="subtext">Always Onward</p>
+        <p class="description">im nolan. i live in seattle. im originally from indiana and have an unreal family. pretty much everything else about me can be found by clicking around furiously on this page.</p>
     </div>
 
     <div class="element other">
         <p class="number">2</p>
-        <p class="flow">Flow:</p>
-        <p class="flowdesc">"is the mental state of operation in which a person performing an activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity."</p>
-        <p class="learn_more"><a style="text-decoration: none;" target="_blank" href="http://en.wikipedia.org/wiki/Flow_(psychology)">(learn more)</a></p>
+        <p class="flowdesc">flow: "the mental state of operation in which a person performing an activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity."</p>
     </div>
 
-    <div class="element art">
+    <div class="element stuff">
+        <img class="longimg" src="./pictures/rock_transparent.png" style="top:-1.1em;left:4.15em;"/></a>
         <p class="number">3</p>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/2013-10-07 02.24.31.png">
-          <img class="whiteborder" src="./pictures/drawings/2013-10-07 02.24.31.png" style="top:.5em;left:.5em;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/2013-10-07 03.45.22.png">
-          <img class="whiteborder" src="./pictures/drawings/2013-10-07 03.45.22.png" style="top:4.5em;left:.5em;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/2013-10-07 02.27.03.png">
-          <img class="whiteborder" src="./pictures/drawings/2013-10-07 02.27.03.png" style="top:1.5em;left:6em;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/2013-10-07 03.40.05.png">
-          <img class="whiteborder" src="./pictures/drawings/2013-10-07 03.40.05.png" style="top:5.5em;left:6em;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/2013-10-07 03.47.05.png">
-          <img class="whiteborder" src="./pictures/drawings/2013-10-07 03.47.05.png" style="top:2.2em;left:11.5em;height:120;width:195;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/2013-10-07 02.28.13.png">
-          <img class="whiteborder" src="./pictures/drawings/2013-10-07 02.28.13.png" style="top:6.2em;left:11.5em;"/></a>
-        <p class="whitedescription" style="top: 15em; left: 1em; margin: 1.0em;">Pencil Drawings<p>
     </div>
 
     <div class="element other">
         <p class="number">4</p>
-        <p class="whitedescription" style="top: 3.0em">"Any sufficiently advanced technology is indistinguishable from magic." <br /> <br />- Arthur C. Clarke <p>
+        <p class="whitedescription" style="top: 2.1em">"any sufficiently advanced technology is indistinguishable from magic." <br /> <br />- arthur c. clarke <p>
     </div>
 
-    <div class="element likes">
+    <div class="element about">
         <p class="number">5</p>
-        <!-- <a href="http://corygodbey.com" title="Cory Godbey, the Illustration Wizard" class="highlighter">
-         <img src="http://behance.vo.llnwd.net/profiles21/483255/projects/1776354/27e5ae8166df7776225399017980fcb8.jpg" alt="Cory Godbey" style="top:1.5em;left:.7em;"></a>
-        <a href="http://lawsofsimplicity.com/" title="John Maeda's Laws of Simplicity" class="highlighter">
-         <img src="http://lawsofsimplicity.files.wordpress.com/2006/07/media_httplawsofsimpl_gdozt-scaled500.gif" alt="Cory Godbey" style="top:2.4em;left:6.35em;"></a>
-        <a href="http://9dkid.com/portfolio-category.html" title="9kid Design">
-         <img src="http://9dkid.com/images/portfolio/Illustration/2d_8_full.jpg" alt="Jaques Pena"
-              style="max-width:6em;top:6.45em;left:6.7em;"></a>-->
-        <a target="_blank" href="http://threadless.com" title="threadless">
-         <img src="./pictures/logos/threadless_logo.png" alt="Threads" style="top:.5em;left:1em;"></a>
-        <a target="_blank" href="http://behance.com" title="behance">
-         <img src="./pictures/logos/behance_logo.png" alt="Arts!" style="top:3em;left:3em;"></a>
-        <a target="_blank" href="http://stumbleupon.com" title="stumbleupon">
-         <img src="./pictures/logos/stumbleupon_logo.png" alt="Stumble" style="top:.8em;left:8.7em;"></a>
-        <a target="_blank" href="http://stackexchange.com/sites" title="StackOverflow">
-         <img src="./pictures/logos/so_logo.png" alt="Stack"
-              style="top:4.7em;left:12.35em;"></a>
-        <p class="whitedescription" style="top: 14.5em; left: 1.5em; margin: 1.0em;">These are sites I like<p>
-    </div>
-
-    <div class="element likes">
-        <p class="number">6</p>
-        <a rel="shadowbox[baseball];" target="_blank" href="./pictures/baseball/ducks.jpg">
-          <img class="whiteborder" src="./pictures/baseball/ducks.jpg" style="top:.5em;left:.5em;"/></a>
-        <a rel="shadowbox[baseball];" target="_blank" href="./pictures/baseball/ducks2.jpg">
-          <img class="whiteborder" src="./pictures/baseball/ducks2.jpg" style="top:4.5em;left:.5em;"/></a>
-        <a rel="shadowbox[baseball];" target="_blank" href="./pictures/baseball/PT_regions.jpg">
-          <img class="whiteborder" src="./pictures/baseball/PT_regions.jpg" style="top:1.5em;left:6em;"/></a>
-        <a rel="shadowbox[baseball];" target="_blank" href="./pictures/baseball/IM_softball.jpg">
-          <img class="whiteborder" src="./pictures/baseball/IM_softball.jpg" style="top:5.5em;left:6em;"/></a>
-        <a rel="shadowbox[baseball];" target="_blank" href="./pictures/baseball/stl_card.gif">
-          <img class="whiteborder" src="./pictures/baseball/stl_card.gif" style="top:2.85em;left:11.5em;"/></a>
-        <p class="whitedescription" style="top: 15em; left: 1em; margin: 1.0em;">Baseball Also<p>
-    </div>
-
-    <div class="element likes">
-        <p class="number">7<p>
-        <a target="_blank" href="http://open.spotify.com/user/nolan330/starred" title="Music stuff">
+        <a target="_blank" href="http://open.spotify.com/user/nolan330/starred" title="music stuff">
           <img src="./pictures/music/spotify.png" alt="music1" style="top:3.6em;left:.75em;"></a>
-        <a target="_blank" href="https://soundcloud.com/nolan330/following" title="Other music stuff">
+        <a target="_blank" href="https://soundcloud.com/nolan330/sets" title="other music stuff">
           <img src="./pictures/music/soundcloud.png" alt="music2" style="top:6em;left:11em;"></a>
-        <a target="_blank" href="http://hypem.com/popular" title="More music stuff">
+        <a target="_blank" href="http://hypem.com/popular" title="more music stuff">
           <img src="./pictures/music/hypem.png" alt="music3" style="top:.3em;left:6.6em;"></a>
-        <p class="whitedescription" style="top:2.05em;left:2.4em;margin:1.0em;">And Music<p>
     </div>
 
     <div class="element other">
-        <p class="number">8</p>
-        <p class="whitedescription" style="top: 2.3em">"The trouble with programmers is that you can never tell what a programmer is doing until it's too late." <br /> <br />- Seymour Cray<p>
+        <img class="backgroundimg narrower" src="./pictures/baseball/ducks2.jpg" style="top:-1em;left:0em;"/></a>
+        <p class="number">6</p>
     </div>
 
-    <div class="element likes">
-        <p class="number">9</p>
+    <div class="element about">
+        <p class="number">7<p>
         <a target="_blank" href="http://store.steampowered.com/app/49520/">
           <img src="./pictures/games/borderlands2.png" style="top:.9em;left:.7em;"/></a>
         <a target="_blank" href="http://store.steampowered.com/app/224760/">
@@ -125,118 +72,84 @@
           <img src="./pictures/games/magicka.png" style="top:1.2em;left:11.4em;"/></a>
         <img src="./pictures/games/ssb.png" style="top:5em;left:12em;"/></a>
         <img src="./pictures/games/wow.png" style="top:6.2em;left:1.7em;width:100;"/></a>
-        <p class="whitedescription" style="top: 16em; left: .5em; margin: .5em;">Games are what made computers cool<p>
-    </div>
-
-    <div class="element art">
-        <p class="number">10</p>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/apple.png">
-          <img class="whiteborder" src="./pictures/drawings/apple.png" style="top:.5em;left:.5em;height:120;width:195;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/bug.png">
-          <img class="whiteborder" src="./pictures/drawings/bug.png" style="top:4.5em;left:.5em;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/cage.png">
-          <img class="whiteborder" src="./pictures/drawings/cage.png" style="top:1.5em;left:6em;height:120;width:195;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/mid_detail.png">
-          <img class="whiteborder" src="./pictures/drawings/mid_detail.png" style="top:5.5em;left:6em;height:120;width:195;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/thought.png">
-          <img class="whiteborder" src="./pictures/drawings/thought.png" style="top:2.2em;left:11.5em;height:120;width:195;"/></a>
-        <a rel="shadowbox[Mixed];" target="_blank" href="./pictures/drawings/trees.png">
-          <img class="whiteborder" src="./pictures/drawings/trees.png" style="top:6.2em;left:11.5em;height:120;width:195;"/></a>
-        <p class="whitedescription" style="top: 15em; left: 1em; margin: 1.0em;">Pen Drawings<p>
-    </div>
-
-    <div class="element likes">
-        <p class="number">11</p>
-        <a rel="shadowbox[louis];" target="_blank" href="./pictures/louis/louis2.jpg">
-          <img src="./pictures/louis/louis2.jpg" class="whiteborder" style="top:.5em;left:.5em;"/></a>
-        <a rel="shadowbox[louis];" target="_blank" href="./pictures/louis/louis4.jpg">
-          <img src="./pictures/louis/louis4.jpg" class="whiteborder" style="top:1.2em;left:6em;"/></a>
-        <a rel="shadowbox[louis];" target="_blank" href="./pictures/louis/louis5.jpg">
-          <img src="./pictures/louis/louis5.jpg" class="whiteborder" style="top:2.7em;left:11.5em;"/></a>
-        <p class="whitedescription" style="top: 15.4em; left: 2.65em; margin: 1.0em;">Louis<p>
-    </div>
-
-    <div class="element work">
-        <p class="number">12</p>
-        <p class="whitedescription" style="top: 0em;margin: 3.5em;font-weight:bold;">Languages:</p>
-        <p class="whitedescription" style="top: 1.3em;margin: 3.5em">C/C++, Java, Python, HTML, JavaScript, CUDA model, Assembly</p>
-        <p class="whitedescription" style="top: 3.6em;margin: 3.5em;font-weight:bold;">Platforms:</p>
-        <p class="whitedescription" style="top: 4.9em;margin: 3.5em">Android Framework, Win32, Linux, Beowulf Clustering, EC2, MongoDB, MySQL/SQLite</p>
-        <p class="whitedescription" style="top: 7.8em;margin: 3.5em;font-weight:bold;">Software:</p>
-        <p class="whitedescription" style="top: 8.7em;margin: 4.0em">SVN/Git, Vim, Visual Studio, Eclipse, Photoshop, Blender, InkScape, Mathematica/MatLab</p>
-    </div>
-
-    <div class="element work">
-        <p class="number">13</p>
-        <p class="course_material">Relevant Course Material:</p>
-        <p class="whitedescription" style="top:0em;margin:2.8em;">Advanced Software Design,
-         Software Engineering and Lifecycle, Programming Languages, Microcontrollers, Embedded Systems,
-         Operating Systems, Mobile Operating Systems, Intro to Computer Graphics, Mobile and Wireless Networks, Algorithms,
-         Advaned Software Engineering, Model Integrated Computing, Cloud Computing, Hybrid Embedded Systems, Network Security</p>
-        <p class="course_material" style="top:11em;left:1.5em;">Elective Course Material:</p>
-        <p class="whitedescription" style="top:9.5em;margin:2.8em;">Fundamentals of Drawing,
-         Intermediate Drawing, Printmaking: Relief and Intaglio,
-         Printmaking: Screenprinting and Experimental, Advanced Drawning, Unmanned Aerial Vehical Design, Image Processing</p>
-    </div>
-
-    <div class="element likes family">
-        <p class="number">14</p>
-        <a rel="shadowbox[family];" target="_blank" href="https://sphotos-a.xx.fbcdn.net/hphotos-prn1/154102_4267973343592_865954694_n.jpg">
-          <img class="whiteborder" style="top:.5em" src="https://sphotos-a.xx.fbcdn.net/hphotos-prn1/154102_4267973343592_865954694_n.jpg" alt="Family"></a>
     </div>
 
     <div class="element other">
+        <img class="backgroundimg" style="top: -1em;left: 0em" src="./pictures/attachments/beach.jpg"/></a>
+        <p class="number">8</p>
+    </div>
+
+    <div class="element about">
+        <p class="number">9</p>
+        <a target="_blank" href="http://threadless.com" title="threadless">
+         <img src="./pictures/logos/threadless_logo.png" alt="threads" style="top:.5em;left:1em;"></a>
+        <a target="_blank" href="http://behance.com" title="behance">
+         <img src="./pictures/logos/behance_logo.png" alt="arts" style="top:3em;left:3em;"></a>
+        <a target="_blank" href="http://stumbleupon.com" title="stumbleupon">
+         <img src="./pictures/logos/stumbleupon_logo.png" alt="stumble" style="top:.8em;left:8.7em;"></a>
+        <a target="_blank" href="http://stackexchange.com/sites" title="stackoverflow">
+         <img src="./pictures/logos/so_logo.png" alt="stack"
+              style="top:4.7em;left:12.35em;"></a>
+    </div>
+
+    <div class="element stuff">
+        <img class="backgroundimg wider" src="./pictures/drawings/mid_detail.png" style="top:0em;left:0em;"/></a>
+        <p class="number">10</p>
+    </div>
+
+    <div class="element people family">
+          <img class="familyimg" style="top:0em; left:-1em;" src="./pictures/attachments/momDad.jpg" alt="Family"/></a>
+          <img class="familyimg" style="top:0em; left:8.675em;" src="./pictures/attachments/ericaNolan.jpg" alt="Family"/></a>
+        <p class="number">11</p>
+    </div>
+
+    <div class="element people">
+        <img class="backgroundimg" style="top: 0em;left:0em;" src="./pictures/attachments/louis.jpg"/></a>
+        <p class="number">12</p>
+    </div>
+
+    <div class="element">
+        <p class="number">13</p>
+        <a href="https://github.com/Nolan330/ShapeGame" target="_blank" class="whitedescription" style="top: 0em;margin: 1.5em;font-weight: bold;">BlockGuy</a>
+        <a rel="shadowbox[projects];" target="_blank" href="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/main_character/main_forward_noCarry_0.png">
+          <img class="whiteborder" style="top: 4.3em;left: .5em;background: hsla(100, 100%, 100%, .3);" src="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/main_character/main_forward_noCarry_0.png" alt="BlockGuy"/></a>
+        <a rel="shadowbox[projects];" target="_blank" href="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/examples/enemy_blue.png">
+          <img class="whiteborder" style="top: 4.3em;left: 6em;background: hsla(100, 100%, 100%, .3);" src="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/examples/enemy_blue.png" alt="blueMeanie"/></a>
+        <a rel="shadowbox[projects];" target="_blank" href="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/examples/example_minion_2.png">
+          <img class="whiteborder" style="top: 6.65em;left: 8.35em;background: hsla(100, 100%, 100%, .3);" src="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/examples/enemy_red.png" alt="redMeanie"/></a>
+        <a rel="shadowbox[projects];" target="_blank" href="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/examples/example_minion.png">
+          <img class="whiteborder" style="top: 4.3em;left: 11.5em;background: hsla(100, 100%, 100%, .3);" src="https://raw.githubusercontent.com/Nolan330/ShapeGame/master/pngs/examples/example_minion.png" alt="redMeanie"/></a>
+    </div>
+
+    <div class="element other nolan">
+        <p class="number">14</p>
+        <p class="whitedescription" style="top: .85em;margin:6em">"worry is a misuse of the imagination"</p>
+    </div>
+
+    <div class="element stuff">
+        <img class="backgroundimg" style="top: 0em;left: 0em;" src="./pictures/drawings/space.jpg"/></a>
         <p class="number">15</p>
     </div>
 
-    <div class="element other">
+    <div class="element people">
+        <img class="backgroundimg bigger" style="top: 0em;left: 0em;" src="./pictures/friends/friends.jpg"/></a>
         <p class="number">16</p>
     </div>
 
-    <div class="element art">
-        <p class="number">17</p>
-    </div>
-
-    <div class="element other">
-        <p class="number">18</p>
-    </div>
-
-    <div class="element other">
-        <p class="number">19</p>
-    </div>
-
-    <div class="element other">
-        <p class="number">20</p>
-    </div>
-
-    <div class="element other">
-        <p class="number">21</p>
-    </div>
-
-    <div class="element likes other">
-        <p class="number">22</p>
-        <a rel="shadowbox[jaime];" target="_blank" href="./pictures/jaime/jme.png">
-          <img src="./pictures/jaime/jme.png" class="whiteborder jaime" style="top:.5em;left:3.5em;"></img></a>
-        <p class="whitedescription" style="top:12.2em;left:6.75em">^ That's Jaime </p>
-        <img src="./pictures/jaime/blush.png" style="top:9.175em;left:10em;width:30px;height:30px"/>
-    </div>
-
     <div class="element contact">
-        <p class="number">23</p>
-        <a target="_blank" href="https://www.facebook.com/nolan.smith.9275" title="Facebook" class="highlighter">
-          <img src="./pictures/logos/facebook_logo.png" alt="My Facebook" style="top:3.6em;left:1em;width:110;height:110"></a>
-        <a target="_blank" href="https://github.com/Nolan330" title="Geeeeeeet" class="highlighter">
+        <p class="number">17</p>
+        <a target="_blank" href="https://www.facebook.com/nolan.smith.9275" title="facebook" class="highlighter">
+          <img src="./pictures/logos/facebook_logo.png" alt="my Facebook" style="top:3.6em;left:1em;width:110;height:110"></a>
+        <a target="_blank" href="https://github.com/Nolan330" title="geeeeeeet" class="highlighter">
           <img src="./pictures/logos/github_logo.png" style="top:3.15em;left:4.7em;width:140;height:140"></a>
-        <a target="_blank" href="https://www.linkedin.com/profile/view?id=77776140&trk=nav_responsive_tab_profile_pic" title="LinkedOut" class="highlighter">
+        <a target="_blank" href="https://www.linkedin.com/profile/view?id=77776140&trk=nav_responsive_tab_profile_pic" title="linkedout" class="highlighter">
           <img src="./pictures/logos/linkedin_logo.png" style="top:3.4em;left:9em;width:125;height:125;"></a>
-        <a target="_blank" href="mailto:nolan330@gmail.com" title="nolan330@gmail.com - I <3 Mail" class="highlighter">
+        <a target="_blank" href="mailto:nolan330@gmail.com" title="nolan330@gmail.com - i <3 mail" class="highlighter">
           <img src="./pictures/logos/gmail_logo.png" style="top:3.9625em;left:12.875em;width:135;height:90;"></a>
     </div>
 
-    <div class="element other">
-        <p class="number">24</p>
-        <p class="whitedescription" style="top: 3.5em">Thanks to David DeSandro for the Isotope Plugin.
-          It's my favorite thing about the internet.</p>
+    <div class="element other nolan">
+        <p class="number">2000000000</p>
     </div>
 </div> <!-- #container -->
 
@@ -248,7 +161,24 @@
             itemSelector: '.element',
             masonry : {
                 columnWidth : 120
-            }
+            },
+            transitionDuration: '0.8s'
+        });
+
+        $container.delegate( '.backgroundimg', 'click', function(e) {
+            var parent = $( e.target ).parent();
+            parent.toggleClass('large');
+            $container.isotope('layout');
+        });
+        $container.delegate( '.familyimg', 'click', function(e) {
+            var parent = $( e.target ).parent();
+            parent.toggleClass('large');
+            $container.isotope('layout');
+        });
+        $container.delegate( '.longimg', 'click', function(e) {
+            var parent = $( e.target ).parent();
+            parent.toggleClass('large');
+            $container.isotope('layout');
         });
 
         // change size of clicked element
@@ -258,7 +188,7 @@
                 return true;
             }
             $(this).toggleClass('large');
-            $container.isotope('reLayout');
+            $container.isotope('layout');
         });
 
         $('#filters').on('click', 'button', function() {
@@ -266,7 +196,7 @@
             $container.isotope({ filter: filterVal });
             $container.find(filterVal).each(function(){
                 var $this = $(this)
-                if (filterVal === '*' || filterVal === '.likes') {
+                if (filterVal === '*') {
                     if ($container.css('width') !== "722px") {
                         $container.css('width', '722px');
                     }
@@ -278,9 +208,8 @@
                     }
                     $this.addClass('large');
                 }
+                $container.isotope('layout');
             });
-            $container.isotope('reLayout');
-            setTimeout(function() { $container.isotope('reLayout'); }, 150);
         });
     });
 </script>

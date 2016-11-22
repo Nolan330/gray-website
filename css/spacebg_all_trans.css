@@ -89,7 +89,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial,   sans-serif;
   font-size: 13px;
   line-height: 2.7em;
-  background: #000 url(../pictures/space/background_test_tiny.jpg) 0 0 no-repeat;
+  background: #181818 /* url(../pictures/space/background_test_tiny.jpg) 0 0 no-repeat */ ;
   color: #FFF;
 }
 
@@ -256,31 +256,9 @@ button:selected {
   max-height: 8em;
 }
 
-.element.family img {
-
-}
-
-.element.large.family img {
-  top: .7em;
-  left: 3.3em;
-  max-width: 9.5em;
-  max-height: 9.5em;
-}
-
 .element * {
   position: absolute;
   margin: 0;
-}
-
-.element .bigName {
-  font-size: 0em;
-  line-height: 1.0em;
-}
-
-.element.large .bigName {
-  top: 0em;
-  left: 0.3em;
-  font-size: 5.0em;
 }
 
 .element .name {
@@ -325,32 +303,6 @@ button:selected {
   left: 4.65em;
 }
 
-.element .subtext {
-  color: hsla(100, 100%, 100%, .05);
-  font-size: 0.7em;
-  left: 0.5em;
-  bottom: 0.2em;
-}
-
-.element .resume {
-  font-size: 0em;
-}
-
-.element.large .resume {
-  left: 6.1em;
-  bottom: 1.3em;
-  font-size: 1.1em;
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
-         -background-clip: text;
-  -webkit-text-fill-color: hsla(100, 100%, 100%, .45);
-     -moz-text-fill-color: hsla(100, 100%, 100%, .45);
-          text-fill-color: hsla(100, 100%, 100%, .45);
-  -webkit-text-stroke: 1px white;
-     -moz-text-stroke: 1px white;
-          text-stroke: 1px white;
-}
-
 .element .flow {
   font-size: 0em;
 }
@@ -372,26 +324,14 @@ button:selected {
   font-size: 1.2em;
 }
 
-.element .learn_more {
-  font-size: 0em;
-}
-
-.element.large .learn_more {
-  top: 13em;
-  left: 13em;
-  line-height: 1.0em;
-  font-size: .56em;
-  color: white;
-  white-space: nowrap;
-}
-
 .element.large .flowdesc {
-  top: 4em;
+  top: 3em;
   position: absolute;
-  margin: 3.6em;
+  margin: 3.0em;
   line-height: 1.0em;
   color: white;
-  font-size: .56em;
+  font-size: .63em;
+  font-weight: bold;
 }
 
 .element .flowdesc {
@@ -404,21 +344,44 @@ button:selected {
   line-height: 1.0em;
   position: absolute;
   margin: 4.5em;
-  font-size: .56em;
+  font-size: .63em;
+  font-weight: bold;
 }
 
 .element .whitedescription {
   font-size: 0em;
 }
 
-.element .jaime {
-  max-width:0px;
-  max-height:0px;
+
+.element .largeimg {
+  max-width: 0px;
+  max-height: 0px;
 }
 
-.element.large .jaime {
-  display: block;
-  max-width: 380px;
+.element.large .largeimg {
+  max-width: 600px;
+  max-height: 275px;
+  padding: 2px;
+  border: 1px solid white;
+}
+
+.element .backgroundimg {
+    max-width: 0px;
+    max-height: 0px;
+}
+
+.element.large .backgroundimg {
+    max-width: 3000px;
+    max-height: 3000px;
+    width: 590px;
+    height: 400px;
+}
+
+.element.large .longimg {
+    max-width: 3000px;
+    max-height: 3000px;
+    width: 323px;
+    height: 430px;
 }
 
 .element .whiteborder {
@@ -431,18 +394,29 @@ button:selected {
   border: 1px solid white;
 }
 
-.element .course_material {
-  font-size: 0em;
+.element.large .familyimg {
+    max-height: 3000px;
+    max-width: 3000px;
+    height: 350px;
+    width: 331px;
 }
 
-.element.large .course_material {
-  top: 1.5em;
-  left: 1.7em;
-  line-height: 1em;
-  color: hsla(100, 100%, 100%, 1);
-  white-space: nowrap;
-  font-size: .56em;
-  font-weight: bold;
+.element.large .narrower {
+    height: 420px;
+}
+
+.element.large .wider {
+    width: 610px;
+}
+
+.element.large .bigger {
+    width: 635px;
+    height: 457px;
+}
+
+.element.large.louis {
+    max-height:600px;
+    max-width: 350px;
 }
 
 .element.large .description {
@@ -452,7 +426,7 @@ button:selected {
   -webkit-text-fill-color: hsla(100, 100%, 100%, .9);
          -moz-text-fill-color: hsla(100, 100%, 100%, .9);
               text-fill-color: hsla(100, 100%, 100%, .9);
-  top: 5.95em;
+  top: 3.8em;
   line-height: 1.1em;
   position: absolute;
   margin: 2.2em;
