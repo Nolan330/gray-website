@@ -191,6 +191,7 @@ body {
 }
 
 #container {
+  width: 722px;
   padding: 5px;
   margin: 0% auto auto auto;
 }

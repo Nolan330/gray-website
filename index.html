@@ -15,7 +15,7 @@
     <!--<script src="./js/jquery.isotope.js"></script>-->
 </head>
 <body>
-<div id="filters" style="margin: 0 auto;text-align:center;border-bottom: 1px solid #FFF;">
+<div id="filters" style="margin:0 auto 4px auto;max-width:722px;text-align:center;border-bottom: 1px solid #FFF;">
     <button data-filter=".nolan">nolan</button>
     <button data-filter=".people">people</button>
     <button data-filter=".stuff">things</button>
@@ -24,7 +24,7 @@
     <button data-filter="*">all</button>
 </div>
 
-<div id="container" style-"margin: 0 auto;">
+<div id="container" style-"margin:auto;">
     <div class="element main nolan">
         <p class="number">1</p>
         <p class="description">im nolan. i live in seattle. im originally from indiana and have an unreal family. pretty much everything else about me can be found by clicking around furiously on this page.</p>
@@ -181,14 +181,11 @@
     $(function(){
         var $container = $('#container');
 
-        if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i) && !navigator.userAgent.match(/BlackBerry/i) && !navigator.userAgent.match(/Windows Phone/i)) {
-            $container.css('width', '722px');
-            $('#filters').css('width', '571px');
-        }
-        else {
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
             $container.css('display', 'block');
-            $container.isotope('layout');
             $('#filters').css('display', 'block');
+            $('#filters').children().css('padding', '7px');
+            $('#filters').css('margin-bottom', '6px');
         }
 
         $container.isotope({
@@ -230,7 +227,7 @@
             $container.isotope({ filter: filterVal });
             $container.find(filterVal).each(function(){
                 var $this = $(this)
-                if (filterVal === '*' && !navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone/i) && !navigator.userAgent.match(/BlackBerry/i) && !navigator.userAgent.match(/Windows Phone/i)) {
+                if (filterVal === '*') {
                     if ($container.css('width') !== "722px") {
                         $container.css('width', '722px');
                     }
