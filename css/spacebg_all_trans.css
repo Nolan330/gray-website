@@ -86,7 +86,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   margin: 100px;
   padding: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial,   sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 2.7em;
   background: #181818 /* url(../pictures/space/background_test_tiny.jpg) 0 0 no-repeat */ ;
@@ -101,7 +101,7 @@ h1, h2, h3, p, ul, ol, pre, dl {
 
 button, h1, h2, h4, #super-list, .element, .tagline, #index-list,
 .super-list .link {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 }
 
 h4 {
@@ -168,6 +168,8 @@ a img { border: none; }
 
 a img:hover {
   box-shadow: 0 0 .75em #FFF;
+  -webkit-box-shadow: 0 0 .75em #FFF;
+  -moz-box-shadow: 0 0 .75em #FFF;
 }
 
 
@@ -194,14 +196,6 @@ body {
   width: 722px;
   padding: 5px;
   margin: 0% auto auto auto;
-}
-
-.center {
-    width: 592px;
-}
-
-.decenter {
-    width: 722px;
 }
 
 .element {
@@ -261,11 +255,36 @@ button:selected {
   margin: 0;
 }
 
-.element .name {
-  left: .5em;
-  bottom: 1.6em;
-  font-size: 1.3em;
-  color: #000000;
+.element .ximg {
+  height: 0px;
+  width: 0px;
+}
+
+.element .ximg:hover{
+  box-shadow: 0 0 .7em #FFF;
+  -webkit-box-shadow: 0 0 .7em #FFF;
+  -moz-box-shadow: 0 0 .7em #FFF;
+}
+
+.element.large .ximg {
+  top: .67em;
+  right: .7em;
+  height: 12.5%;
+  width: 7.155;
+  background-color: hsla(0, 10%, 10%, .5);
+}
+
+.element .embed {
+  left: -5em;
+  height: 0px;
+  width: 0px;
+}
+
+.element.large .embed {
+  left: -.1em;
+  top: -.1em;
+  height: 101%;
+  width: 100%;
 }
 
 .element .about {
@@ -280,17 +299,6 @@ button:selected {
   bottom: 1.4em;
 }
 
-.element .lowerText {
-  line-height: 1.2em;
-  font-size: 0.0em;
-  left: 0.5em;
-  bottom: 0.2em;
-}
-
-.element.large .lowerText {
-  font-size: 0.4em;
-}
-
 .element.props img {
   max-height: 0.0em;
   max-width: 0.0em;
@@ -301,68 +309,6 @@ button:selected {
   max-width: 8.0em;
   top: 1.3em;
   left: 4.65em;
-}
-
-.element .flow {
-  font-size: 0em;
-}
-
-.element.large .flow {
-  line-height: 1em;
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
-         -background-clip: text;
-  -webkit-text-fill-color: hsla(100, 100%, 100%, .45);
-     -moz-text-fill-color: hsla(100, 100%, 100%, .45);
-          text-fill-color: hsla(100, 100%, 100%, .45);
-  -webkit-text-stroke: 2px white;
-     -moz-text-stroke: 2px white;
-          text-stroke: 2px white;
-  font-weight: bold;
-  top: 2.07em;
-  left: 1.30em;
-  font-size: 1.2em;
-}
-
-.element.large .flowdesc {
-  top: 3em;
-  position: absolute;
-  margin: 3.0em;
-  line-height: 1.0em;
-  color: white;
-  font-size: .63em;
-  font-weight: bold;
-}
-
-.element .flowdesc {
-  font-size: 0em;
-}
-
-.element.large .whitedescription {
-  color: hsla(100, 100%, 100%, 1);
-  top: 5.3em;
-  line-height: 1.0em;
-  position: absolute;
-  margin: 4.5em;
-  font-size: .63em;
-  font-weight: bold;
-}
-
-.element .whitedescription {
-  font-size: 0em;
-}
-
-
-.element .largeimg {
-  max-width: 0px;
-  max-height: 0px;
-}
-
-.element.large .largeimg {
-  max-width: 600px;
-  max-height: 275px;
-  padding: 2px;
-  border: 1px solid white;
 }
 
 .element .backgroundimg {
@@ -390,7 +336,7 @@ button:selected {
 }
 
 .element.large .whiteborder {
-  padding: 2px;
+  padding: 2px
   border: 1px solid white;
 }
 
@@ -414,11 +360,6 @@ button:selected {
     height: 457px;
 }
 
-.element.large.louis {
-    max-height:600px;
-    max-width: 350px;
-}
-
 .element.large .description {
   -webkit-background-clip: text;
      -moz-background-clip: text;
@@ -431,17 +372,20 @@ button:selected {
   position: absolute;
   margin: 2.2em;
   font-size: .63em;
-  font-weight: bold;
+  text-align: left;
+  float: left;
+  text-align: -webkit-left;
 }
 
 .element .description {
   font-size: 0em;
+  float: left;
 }
 
 .element .contact {
   line-height: .6em;
   font-size: 0em;
-}
+    }
 
 .element.large .contact {
   color: hsla(0, 0%, 100%, .75);
@@ -450,21 +394,6 @@ button:selected {
   font-size: .75em;
   line-height: .75em;
 }
-
-.element .header {
-  left: .25em;
-  top: .15em;
-  font-weight: bold;
-  font-size: 0em;
-  color: #FFF;
-}
-
-.element.large .header {
-  left: .5em;
-  top: .5em;
-  font-size: 1.25em;
-}
-
 
 .element .number {
   font-size: 1.25em;
