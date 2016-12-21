@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/nolan330
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://notalwaysgray.net
+  * I am nolan330 (https://keybase.io/nolan330) on keybase.
+  * I have a public key with fingerprint 0021 582C 6E51 EC10 7C20  D296 4630 C5C1 03BD 2EC0
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01013b27f02eae32eedc6afbc877404b8d063c5aa8fb2c0cad99fc9e9243617c881d0a",
+            "fingerprint": "0021582c6e51ec107c20d2964630c5c103bd2ec0",
+            "host": "keybase.io",
+            "key_id": "4630c5c103bd2ec0",
+            "kid": "01013b27f02eae32eedc6afbc877404b8d063c5aa8fb2c0cad99fc9e9243617c881d0a",
+            "uid": "8be869b5c2252ba88bb729a59125a419",
+            "username": "nolan330"
+        },
+        "revoke": {
+            "sig_ids": [
+                "37f7b76dda080db63f63b284b4b25cafd22c923fc2d92b2fe3ca6a7c525434190f"
+            ]
+        },
+        "service": {
+            "hostname": "notalwaysgray.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1482274913,
+    "expire_in": 157680000,
+    "prev": "3eaf37912100d6022d66411af8cc0fca58942ee29d22915621a2b39b332233a4",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMJ2AnicrVJtaFZVHH9muc1lqR8kyspxtC23tc7Lvefe80SDSHEShpLMhcrTebvP
+rtvufbr37rHHYYu+BEVlorE+ldRGCstSwgkS21TQFvQmT0JTqS0hMUghdKth5470
+kx89Xw7nf37/3+/3fzl5/z2Zmoqjh/Z8tfrSxI2K8dHrPZn2l4Z5LxChKoFsL+jU
+c5fuUjpOcp2+AlkAEUREYMeDWHNNsNZKUu4J6TqOBS3hKkiJtDl3PYEllFwx5kmm
+GbYIRY50XaQgB03A84O8jgqRHyQpLcTIdrGk2kZaIuhIDBVm1KIEStsEiFBYS2gS
+O8I4zTDmBI91sx+amHnk5uzdAX+XfffM0blCu5QJW2JsY8FdVwgHM24zhG1uIZYC
+Yx0FvFsbdBB28YAQCHY1gUgXw06d9jX288Z0DLJbAHE8RzhUKQ5dqAQlHjVmXUtY
+AtuSewpjyTDxJFYMC+xpIjnljrSxbREjBz2wzXAbxaIv58jTLt1WT3jXDl6K8xEv
+NQc6MeYKUZiEMuwy3x1JUsimzpJSIYXv0CL3P1FO+IEyczIJRR3FfhiALDJImfgp
+M7JcjB2LIdIE9KsFP9I5P0XYDnWhOamMLhpKorlHHNMbBKGiEGNFqYUQ91wpoSe5
+7TLLTAQzUydDNsWIY0GYIARjQrgF0tJeCUKQpcYmzxtK07yAJz2RBrvGRrbem6mo
+yVTOn5fub6ZmweJbW/0HqbrZ2vbmxOSNpRv/em3d/unqj7+f7mvxi4d/z5INLw9f
+/XT+37XfVk1ebvj86Q+eKr1+c+/E0LWZ/uVnG8qbju2f17L0w+vPsZnTuvLK+1MP
+NT7RULtw71h52e7z3V/HX9TWn2wb7H+0beX0ufzOc+VjD1yo3H7fovJA9VuND68/
+NLZn/GLjM/VVa2frLg2X6TfrB5e1/lD8LNPWcqX6+RM7X/xFFD/qWLLyy6HLq+HQ
+Avjv8jOzvX2bO999HNYHx0erxg8W1sVTfYML+37cXf/JmSP6xIZVp6b21bW/0N+8
+ds0/P1XogVUzm97b+Fjdnyt6R7e/MXv2wRUHBn77tXXNOyNjk+1PPvLszyMH93Wj
+786//R+pyWHW
+=9wN2
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nolan330
+
+==================================================================

@@ -256,34 +256,34 @@ button:selected {
 }
 
 .element .ximg {
-  height: 0px;
-  width: 0px;
+  display:none;
 }
 
-.element .ximg:hover{
+.element .ximg:hover {
   box-shadow: 0 0 .7em #FFF;
   -webkit-box-shadow: 0 0 .7em #FFF;
   -moz-box-shadow: 0 0 .7em #FFF;
+  background-color: hsla(0, 10%, 10%, .9);
 }
 
 .element.large .ximg {
+  display: inline;
   top: .67em;
-  right: .7em;
+  right: .8em;
   height: 12.5%;
-  width: 7.155;
+  width: 7.15%;
   background-color: hsla(0, 10%, 10%, .5);
 }
 
 .element .embed {
-  left: -5em;
-  height: 0px;
-  width: 0px;
+  display: none;
 }
 
 .element.large .embed {
-  left: -.1em;
-  top: -.1em;
-  height: 101%;
+  display: inline;
+  left: 0em;
+  top: 0em;
+  height: 100%;
   width: 100%;
 }
 
@@ -336,7 +336,7 @@ button:selected {
 }
 
 .element.large .whiteborder {
-  padding: 2px
+  padding: 2px;
   border: 1px solid white;
 }
 
@@ -360,32 +360,43 @@ button:selected {
     height: 457px;
 }
 
-.element.large .description {
+
+.element .descriptionbase {
+  display: none;
+}
+
+.element.large .descriptionbase {
+  display: inline;
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: hsla(100, 100%, 100%, .9);
          -moz-text-fill-color: hsla(100, 100%, 100%, .9);
               text-fill-color: hsla(100, 100%, 100%, .9);
-  top: 3.8em;
+
+  text-align: -webkit-left;
+  text-align: left;
+  float: left;
+
   line-height: 1.1em;
   position: absolute;
   margin: 2.2em;
-  font-size: .63em;
-  text-align: left;
-  float: left;
-  text-align: -webkit-left;
 }
 
-.element .description {
-  font-size: 0em;
-  float: left;
+.element.large .description {
+  top: 3.8em;
+  font-size: .63em;
+}
+
+.element.large .longdescription {
+  top: 2em;
+  font-size: 43%;
 }
 
 .element .contact {
   line-height: .6em;
   font-size: 0em;
-    }
+}
 
 .element.large .contact {
   color: hsla(0, 0%, 100%, .75);
