@@ -20,10 +20,10 @@
     <button data-filter=".nolan">nolan</button>
     <button data-filter=".people">people</button>
     <button data-filter=".things">things</button>
-    <button data-filter=".likes">stuff</button>
-    <button data-filter=".about">about</button>
+    <button data-filter=".likes">prefs</button>
+    <button data-filter=".about">quotes</button>
     <button data-filter=".contact">contact</button>
-    <button data-filter="*">all</button>
+    <button class="is-checked" data-filter="*">all</button>
 </div>
 
 <div id="container" style-"margin:auto;">
@@ -137,11 +137,12 @@
         <!-- D3 force graph of site normalized similarity
             ash, erica, mark, doug, joe, bloq, beeple-->
         <p class="number">20</p>
-        <p class="descriptionbase longdescription">
+        <p class="descriptionbase longdescription">placeholdington</p>
+        <!--<p class="descriptionbase longdescription">
             <a target="_blank" href="http://www.thephatash.com/" class="descriptionbase">ash</a><br/>
             <a target="_blank" href="http://www.ericasmith.co/" class="descriptionbase">erica</a><br/>
             <a target="_blank" href="http://sugarboypress.blogspot.com/" class="descriptionbase">mark</a>
-        </p>
+        </p>-->
     </div>
 
     <div class="element likes">
@@ -197,12 +198,12 @@
           <img src="./pictures/logos/facebook_logo.png" alt="my Facebook" style="top:3.6em;left:1em;width:110;height:110"></a>
         <a target="_blank" href="https://github.com/Nolan330" title="geet">
           <img src="./pictures/logos/github_logo.png" style="top:3.15em;left:4.7em;width:140;height:140"></a>
-        <a target="_blank" href="https://www.linkedin.com/profile/view?id=77776140&trk=nav_responsive_tab_profile_pic" title="linkedout" class="highlighter">
+        <a target="_blank" href="https://www.linkedin.com/in/nolan-smith-41006922" title="linkedout" class="highlighter">
           <img src="./pictures/logos/linkedin_logo.png" style="top:3.4em;left:9em;width:125;height:125;"></a>
         <a target="_blank" href="mailto:nolan330@gmail.com" title="i love mail">
           <img src="./pictures/logos/gmail_logo.png" style="top:3.9625em;left:12.875em;width:135;height:90;"></a>
         <a target="_blank" href="https://keybase.io/nolan330" style="">
-            <img style="top:8em;left:6.3em;filter: saturate(0%) brightness(200%) contrast(100%);" src="./pictures/keybaselogo.png"/></a>
+            <img style="top:8em;left:6.2em;filter: saturate(0%) brightness(200%) contrast(100%);" src="./pictures/keybaselogo.png"/></a>
     </div>
 
     <div class="element other nolan">
@@ -213,6 +214,12 @@
 <script>
     $(function(){
         var $container = $('#container');
+        var $filters = $('#filters');
+
+        $filters.delegate('button', 'click', function(e) {
+            $filters.children().removeClass('is-checked');
+            $(e.target).addClass('is-checked');
+        });
 
         if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
             $container.css('display', 'block');
